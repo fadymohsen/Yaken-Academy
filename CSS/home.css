@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+body {
+    font-family: Arial, Tahoma;
+    background-color: #DDD;
+  }
+
+
+
+
+/* Start Main Course Styling */
+
+.mainCourse {
+    width: 600px;
+    min-height: 400px;
+    max-height: 400px;
+    box-shadow: 0 0 50px rgb(88, 85, 85);
+    padding: 20px;
+    margin: 20px auto 50px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.mainCourse .mainTitle{
+    margin: 0 0 20px;
+    background-color: #009688;
+    color: #fff;
+    padding: 30px;
+    width: calc(100% + 80px);
+    position: relative;
+    left: -40px;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.mainCourse .mainTitle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    border-width: 10px;
+    border-color: #02766b #02766b transparent transparent;
+    border-style: solid;
+  }
+  .mainCourse .mainTitle:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    border-width: 10px;
+    border-color: #02766b transparent transparent #02766b;
+    border-style: solid;
+  }
+
+.mainCourse .mainDescription{
+    font-size: 26px;
+    line-height: 1.6;
+}
+
+/* End Main Course Styling */
+
+
+
+
+
+/* Start Course Styling */
+
+.course {
+    border: 4px solid black;
+    border-radius: 20px;
+    width: 500px;
+    min-height: 420px;
+    max-height: 420px;
+    box-shadow: 0 0 15px #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.course .courseHeader {
+    background-color: #009688;
+    padding: 15px;
+    margin: auto;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 26px;
+    transition: 0.6s;
+}
+
+.course .courseIMG{
+    width: 150px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.course .courseDescription{
+    line-height: 1.6;
+    transition: 0.6s;
+    font-size: 22px;
+    margin-top: 25px;
+}
+
+.course:hover .courseHeader {
+    box-shadow: 0 0 0 500px #009688;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  .course:hover .courseDescription {
+    color: white;
+  }
+
+/* End Course Styling */
+
+
+
+
+
