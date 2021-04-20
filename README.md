@@ -1,2 +1,2 @@
-# GitHub
+# Yaken Academy
  
