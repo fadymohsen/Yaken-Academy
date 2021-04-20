@@ -7,8 +7,58 @@
 
 body {
     font-family: Arial, Tahoma;
-    background-color: #DDD;
+    background-color: #eaf4f6;
   }
+
+
+
+
+
+/**/
+
+.background1{
+    background-color: #00305b;
+    width: 40%;
+    height: 750px;
+    margin-bottom: 80px;
+
+}
+
+.coverIMG{
+    width: 90%;
+    height: 700px;
+    position: absolute;
+    opacity: 0.5;
+    top: 30px;
+    left: 5%;
+}
+
+.academyStyle{
+    font-family: fantasy;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.background1 .academyStyle h3{
+    width: fit-content;
+    margin: auto;
+    padding: 100px 20px 150px;
+}
+
+.slogan{
+    width: 500px;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bold;
+    color: white;
+    padding: 50px 0 100px 40px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/**/
+
 
 
 
@@ -28,7 +78,7 @@ body {
 
 .mainCourse .mainTitle{
     margin: 0 0 20px;
-    background-color: #009688;
+    background-color: #00305b;
     color: #fff;
     padding: 30px;
     width: calc(100% + 80px);
@@ -45,7 +95,7 @@ body {
     left: 0;
     bottom: -20px;
     border-width: 10px;
-    border-color: #02766b #02766b transparent transparent;
+    border-color: #00305b #00305b transparent transparent;
     border-style: solid;
   }
   .mainCourse .mainTitle:after {
@@ -54,7 +104,7 @@ body {
     right: 0;
     bottom: -20px;
     border-width: 10px;
-    border-color: #02766b transparent transparent #02766b;
+    border-color: #00305b transparent transparent #00305b;
     border-style: solid;
   }
 
@@ -72,25 +122,26 @@ body {
 /* Start Course Styling */
 
 .course {
+    float: left;
     border: 4px solid black;
     border-radius: 20px;
-    width: 500px;
-    min-height: 420px;
-    max-height: 420px;
+    width: calc((100%/3) - 20px);
+    min-height: 525px;
+    max-height: 525;
     box-shadow: 0 0 15px #ddd;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px 10px;
     text-align: center;
     overflow: hidden;
 }
 
 .course .courseHeader {
-    background-color: #009688;
+    background-color: #00305b;
     padding: 15px;
     margin: auto;
     color: #fff;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -100,27 +151,42 @@ body {
     transition: 0.6s;
 }
 
-.course .courseIMG{
-    width: 150px;
-    height: 100px;
-    border-radius: 20px;
-}
-
 .course .courseDescription{
     line-height: 1.6;
     transition: 0.6s;
     font-size: 22px;
     margin-top: 25px;
+    min-height: 200px;
+}
+
+.course .courseBtn{
+    display: inline-block;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #00305b;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .course:hover .courseHeader {
-    box-shadow: 0 0 0 500px #009688;
+    box-shadow: 0 0 0 500px #00305b;
     border: 2px solid white;
     border-radius: 50%;
+    background-color: #eaf4f6;
+    color: #00305b;
   }
-  .course:hover .courseDescription {
+.course:hover .courseDescription {
     color: white;
   }
+
+.course:hover .courseBtn{
+    color: #00305b;
+    background-color: #eaf4f6;
+
+}
 
 /* End Course Styling */
 
